@@ -1,1 +1,1 @@
-# scollection-timezone
+# Static Collection TimeZone
