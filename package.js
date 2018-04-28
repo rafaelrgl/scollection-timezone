@@ -1,8 +1,8 @@
 Package.describe({
-    name: 'rafaelrgl:scollection-timezones',
+    name: 'rafaelrglima:scollection-timezones',
     version: '0.0.1',
     // Brief, one-line summary of the package.
-    summary: 'This package contains TimeZone Collection to use inside projects',
+    summary: 'This package contains Static TimeZones Collection to use inside projects.',
     // URL to the Git repository containing the source code for this package.
     git: 'https://github.com/rafaelrgl/scollection-timezone',
     // By default, Meteor will default to using README.md for documentation.
@@ -24,6 +24,6 @@ Package.onUse(function(api) {
         'client/client.js'
     ], 'client');
     api.addFiles('private/scollection-timezones.json', 'server', {isAsset:true})
-    api.use(['tracker', 'mongo', 'session', 'http', 'blaze-html-templates', "nimble:restivus"]);
+    api.use(['tracker', 'mongo', 'session', 'http', "nimble:restivus@0.8.12"]);
     api.export('scollection', ['client', 'server']);
 });
