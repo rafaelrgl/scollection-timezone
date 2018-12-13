@@ -20,10 +20,10 @@ SCollectionApi.addRoute('getbyname', {
             //console.log(JSON.stringify(query, null, 2));
             var options = {sort: { country_name : 1 }, limit: 10};
 
-            scollection.TimeZones.find(query, options).forEach(function(item){
+            SCollection.TimeZones.find(query, options).forEach(function(item){
                 data.push({text: item.name, id: item._id, data: item});
             });
-            var count = scollection.TimeZones.find(query).count();
+            var count = SCollection.TimeZones.find(query).count();
             response = {
                 statusCode: 200,
                 body: {

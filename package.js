@@ -1,6 +1,6 @@
 Package.describe({
     name: 'rafaelrglima:scollection-timezones',
-    version: '0.0.1',
+    version: '0.0.2',
     // Brief, one-line summary of the package.
     summary: 'This package contains Static TimeZones Collection to use inside projects.',
     // URL to the Git repository containing the source code for this package.
@@ -25,5 +25,5 @@ Package.onUse(function(api) {
     ], 'client');
     api.addFiles('private/scollection-timezones.json', 'server', {isAsset:true})
     api.use(['tracker', 'mongo', 'session', 'http', "nimble:restivus@0.8.12"]);
-    api.export('scollection', ['client', 'server']);
+    api.export('SCollection', ['client', 'server']);
 });

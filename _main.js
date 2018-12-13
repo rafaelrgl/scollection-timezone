@@ -1,6 +1,6 @@
-scollection = {};
+SCollection = !SCollection ? {} : SCollection;
 
 
-scollection.config = {
+SCollection.config = {
     debug: false
 }
